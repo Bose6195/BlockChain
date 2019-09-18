@@ -1,0 +1,21 @@
+.mat-icon {
+  color: black;
+
+}
+/* Note: If you're using an SVG icon, you should make the class target the `<svg>` element */
+.material-icon {
+  fill: white;
+}
+
+.backGround
+{
+  background-color: gray;
+}
+
+.matStyle{
+  color: black;
+}
+
+.matIconPosition{
+vertical-align:middle;
+}

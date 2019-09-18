@@ -1,0 +1,62 @@
+<mat-sidenav-container fullscreen >
+  <mat-sidenav #sidenav mode="push" class="app-sidenav">
+    <mat-toolbar color="black">
+      <!--future svg to go here-->
+      <span class="toolbar-filler"></span>
+      <button md-icon-button (click)="sidenav.toggle()" class="md-icon-button sidenav-toggle-button" [hidden]="!sidenav.opened">
+        <mat-icon aria-label="Menu" class="material-icons">close</mat-icon>
+      </button>
+    </mat-toolbar>
+    <mat-nav-list>
+        <a mat-list-item class="sidenav-link" [routerLink]="['/profile']" (click)="sidenav.toggle()">
+          <mat-icon mat-list-icon>account_circle</mat-icon>
+          <span class="title" md-line>Profile</span>
+        </a>
+        <a mat-list-item class="sidenav-link" [routerLink]="['/physical-activity']" (click)="sidenav.toggle()">
+          <mat-icon mat-list-icon>directions_walk</mat-icon>
+          <span class="title" md-line>Physical Activity</span>
+        </a>
+
+        <a mat-list-item class="sidenav-link" [routerLink]="['/nutrition']" (click)="sidenav.toggle()">
+          <mat-icon mat-list-icon>description</mat-icon>
+          <span class="title" md-line>Nutrition</span>
+        </a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-toolbar id="appToolbar" color="black" >
+
+ <img class="jpg-icon"  src="assets/images/2.png" style="padding-right:20px;">
+
+    <button md-icon-button (click)="sidenav.toggle()" class="md-icon-button sidenav-toggle-button" [hidden]="sidenav.opened">
+                <mat-icon aria-label="Menu" class="material-icons">menu</mat-icon>
+        </button>
+    <!-- <h1 class="component-title">
+      <a class="title-link">{{title}}</a>
+    </h1> -->
+
+    <div>
+        <button mat-button>Dashboard</button>
+    </div>
+    <div>
+        <button mat-button>Users</button>
+    </div>
+    <div>
+        <button mat-button>Settings</button>
+    </div>
+
+    <span class="toolbar-filler"></span>
+    <!--<button id="button-login" md-button [routerLink]="['/signupin']" *ngIf="!(user | async)">Log In</button>-->
+    <!-- <button id="button-logout" md-button>Log Out</button> -->
+    <button mat-icon-button [matMenuTriggerFor]="notificationsMenu" (mouseover)="openNotifications()" >
+        <mat-icon class="material-icons ele-text-color-grey">account_circle</mat-icon>
+      </button>
+
+       <mat-menu  #notificationsMenu="matMenu" [overlapTrigger]="false">
+          <button mat-menu-item [routerLink]="['/login']">Logout</button>
+          <button mat-menu-item>Edit Profile</button>
+       </mat-menu>
+
+  </mat-toolbar>
+  <router-outlet></router-outlet>
+</mat-sidenav-container>
+

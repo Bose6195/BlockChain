@@ -1,0 +1,29 @@
+.parentdiv {
+  width: 50%;
+  height: 670px;
+  padding-right:50px;
+}
+
+.childdiv {
+  width: 100%;
+  border: 1px solid grey;
+  margin-left: 419px;
+  margin-top: 130px;
+  height: 364px;
+}
+
+.child-childdiv{
+  width: 50%;
+  border: 1px solid grey;
+  height: 364px;
+  }
+  .form
+  {
+    padding-left: 20px;
+    padding-top: 50px;
+  }
+
+  /* .btnColor{
+    background-color: black;
+    color: deepskyblue;
+  } */

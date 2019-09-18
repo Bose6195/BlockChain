@@ -1,0 +1,144 @@
+<div>
+  <table style="width:80%;border:1px solid white">
+    <tr>
+      <td>
+        <button md-icon-button>My Profile</button>
+      </td>
+    </tr>
+   <tr>
+     <td></td>
+     <td><h2 style="font-family: sans-serif">Patient Name</h2></td>
+   </tr>
+   <tr>
+     <td style="text-align: center;padding-bottom: 71px;">
+       <div class="dot"><img style="width:95px;" src="assets/images/male.jpg"></div>
+     </td>
+     <td style="border:1px solid white;"  *ngFor="let element of testData">
+ <table>
+   <tr>
+     <td style="text-align: left">
+         <div class="alignclass">CIN:</div>
+         <div class="alignclass">BLood Type:</div>
+         <div class="alignclass">Height:</div>
+         <div class="alignclass">Weight:</div>
+     </td>
+     <td style="text-align: center;padding-left: 20px">
+         <div class="alignclass">{{element.title}}</div>
+         <div class="alignclass">{{element.title}}</div>
+         <div class="alignclass">{{element.title}}</div>
+         <div class="alignclass">{{element.title}}</div>
+     </td>
+   </tr>
+ </table>
+ </td>
+     <td style="border:1px solid white;" *ngFor="let element of testData">
+               <!-- <div class="alignclass"><span>Phone:</span><span class="alignSpan">{{element.title}}</span></div>
+               <div class="alignclass"><span>Emergency Phone:</span><span class="alignSpan">{{element.title}}</span></div>
+               <div class="alignclass"><span>Email:</span><span class="alignSpan">{{element.title}}</span></div>
+               <div class="alignclass"><span>Address:</span><span class="alignSpan">{{element.title}}</span></div>
+               <div class="alignclass"><span>Gender:</span><span class="alignSpan">{{element.title}}</span></div> -->
+
+               <table>
+                   <tr>
+                     <td style="text-align: left">
+                         <div class="alignclass">Phone:</div>
+                         <div class="alignclass">Emergency Phone:</div>
+                         <div class="alignclass">Email:</div>
+                         <div class="alignclass">Address:</div>
+                         <div class="alignclass">Gender:</div>
+                     </td>
+                     <td style="text-align: center;padding-left: 20px">
+                         <div class="alignclass">{{element.title}}</div>
+                         <div class="alignclass">{{element.title}}</div>
+                         <div class="alignclass">{{element.title}}</div>
+                         <div class="alignclass">{{element.title}}</div>
+                         <div class="alignclass">{{element.title}}</div>
+                     </td>
+                   </tr>
+                 </table>
+     </td>
+   </tr>
+ </table>
+ <mat-tab-group style="padding-left: 100px !important">
+   <mat-tab  label="Drugs">
+     <div style="padding-top:24px">
+       <table  id="drugTable">
+           <tr >
+             <th>First Name</th>
+             <th>Last Name</th>
+             <th>Points</th>
+           </tr>
+           <tr>
+             <td>Jill</td>
+             <td>Smith</td>
+             <td>50</td>
+           </tr>
+           </table>
+         </div>
+   </mat-tab>
+   <mat-tab label="MRI">
+       <div style="padding-top:24px">
+           <table id="drugTable">
+               <tr>
+                 <th>First Name</th>
+                 <th>Last Name</th>
+                 <th>Points</th>
+               </tr>
+               <tr>
+                 <td>Jill</td>
+                 <td>Smith</td>
+                 <td>50</td>
+               </tr>
+               </table>
+             </div>
+   </mat-tab>
+   <mat-tab label="Lab Test">
+       <div style="padding-top:24px">
+           <table id="drugTable">
+               <tr>
+                 <th>First Name</th>
+                 <th>Last Name</th>
+                 <th>Points</th>
+               </tr>
+               <tr>
+                 <td>Jill</td>
+                 <td>Smith</td>
+                 <td>50</td>
+               </tr>
+               </table>
+             </div>
+   </mat-tab>
+   <mat-tab label="Chronic Disease">
+       <div style="padding-top:24px">
+           <table id="drugTable">
+               <tr>
+                 <th>First Name</th>
+                 <th>Last Name</th>
+                 <th>Points</th>
+               </tr>
+               <tr>
+                 <td>Jill</td>
+                 <td>Smith</td>
+                 <td>50</td>
+               </tr>
+               </table>
+             </div>
+   </mat-tab>
+   <mat-tab label="Allergies">
+       <div style="padding-top:24px">
+           <table id="drugTable">
+               <tr>
+                 <th>First Name</th>
+                 <th>Last Name</th>
+                 <th>Points</th>
+               </tr>
+               <tr>
+                 <td>Jill</td>
+                 <td>Smith</td>
+                 <td>50</td>
+               </tr>
+               </table>
+             </div>
+   </mat-tab>
+ </mat-tab-group>
+ </div>
